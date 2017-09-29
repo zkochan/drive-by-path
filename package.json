@@ -1,0 +1,47 @@
+{
+  "name": "drive-by-path",
+  "version": "0.0.0",
+  "description": "Returns the drive to which a path belongs",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard && node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkochan/drive-by-path.git"
+  },
+  "keywords": [
+    "drive",
+    "disk",
+    "path",
+    "fs"
+  ],
+  "author": {
+    "name": "Zoltan Kochan",
+    "email": "zoltankochan@gmail.com",
+    "url": "https://www.kochan.io",
+    "twitter": "ZoltanKochan"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkochan/drive-by-path/issues"
+  },
+  "homepage": "https://github.com/zkochan/drive-by-path#readme",
+  "dependencies": {
+    "drivelist": "github:zkochan/drivelist",
+    "is-subdir": "^1.0.1",
+    "once": "^1.4.0",
+    "ramda": "^0.24.1",
+    "util.promisify": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  }
+}
