@@ -1,5 +1,7 @@
 # drive-by-path
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zkochan/drive-by-path.svg)](https://greenkeeper.io/)
+
 [![Status](https://travis-ci.org/zkochan/drive-by-path.svg?branch=master)](https://travis-ci.org/zkochan/drive-by-path "See test builds")
 [![Build status](https://ci.appveyor.com/api/projects/status/p6gfn1w3fc8e94v1?svg=true)](https://ci.appveyor.com/project/zkochan/drive-by-path)
 
