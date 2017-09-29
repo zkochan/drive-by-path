@@ -14,7 +14,13 @@ module.exports = function driveByPath (path) {
     throw new TypeError(`Expected \`path\` to be of type \`string\`, got \`${typeof path}\``)
   }
   return drivesByMountpoints()
-    .then(drives => drives.find(drive => isSubdir(drive.mountpointPath, path)))
+    .then(drives => {
+      console.log(drives)
+      return drives.find(drive => {
+        console.log(drive.mountpointPath, path)
+        return isSubdir(drive.mountpointPath, path)
+      })
+    })
 }
 
 function _drivesByMountpoints () {
