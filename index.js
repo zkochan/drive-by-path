@@ -6,7 +6,7 @@ const R = require('ramda')
 const isSubdir = require('is-subdir')
 
 const drivelist = promisify(_drivelist.list)
-const sortByMountpoint = R.sortBy(R.prop('mountpoint'))
+const sortByMountpoint = R.sortBy(R.prop('mountpointPath'))
 const drivesByMountpoints = once(_drivesByMountpoints)
 
 module.exports = function driveByPath (path) {
@@ -38,5 +38,9 @@ function _drivesByMountpoints () {
           )
         )
       )
+      .reverse()
+      // The longer mountpoints are checked first.
+      // On Linux there is always a / mountpoint and all the other volumes
+      // are started with / as well
     })
 }
