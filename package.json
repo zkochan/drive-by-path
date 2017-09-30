@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "description": "Returns the drive to which a path belongs",
   "main": "index.js",
+  "typings": "index.d.ts",
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "scripts": {
     "test": "standard && node test"
