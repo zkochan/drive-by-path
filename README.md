@@ -21,21 +21,20 @@ const driveByPath = require('drive-by-path')
 driveByPath('/zkochan/foo')
   .then(drive => console.log(drive))
 //> {
-//    drive: {
-//      device: '/dev/disk0',
-//      displayName: '/dev/disk0',
-//      ...
-//    },
-//    mountpointPath: '/'
+//    matchedMountpointPath: '/'
+//    device: '/dev/disk0',
+//    displayName: '/dev/disk0',
+//    ...
 //  }
 ```
 
 ## API
 
-### `driveByPath(path): Promise<{drive, mountpoint}>`
+### `driveByPath(path): Promise<DriveInfo>`
 
-Returns info abouth the drive and the mountpoint under which the path is located.
-One drive can have multiple mountpoints.
+Returns info abouth the drive under which the path is located.
+Also returns what mountpoint was matched via `matchedMountpointPath`:
+one drive can have multiple mountpoints.
 
 **Arguments:**
 

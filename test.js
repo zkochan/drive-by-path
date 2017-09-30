@@ -7,10 +7,10 @@ test('driveByPath()', t => {
   t.throws(() => driveByPath(1), /got `number`/)
 
   driveByPath(__dirname)
-    .then(_ => {
-      t.ok(_)
-      t.ok(_.mountpointPath)
-      t.ok(_.drive)
+    .then(drive => {
+      t.ok(drive)
+      t.ok(drive.matchedMountpointPath)
+      t.ok(drive.device)
       t.end()
     })
     .catch(t.end)

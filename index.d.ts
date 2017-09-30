@@ -1,12 +1,10 @@
 export = driveByPath;
 
-declare function driveByPath (filepath: string, cwd?: string): Promise<{
-  mountpointPath: string,
-  drive: driveByPath.Drive,
-}>;
+declare function driveByPath (filepath: string, cwd?: string): Promise<driveByPath.Drive>;
 
 declare namespace driveByPath {
   type Drive = {
+    matchedMountpointPath: string,
     device: string,
     displayName: string,
     description: string,
