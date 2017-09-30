@@ -36,11 +36,11 @@
   },
   "homepage": "https://github.com/zkochan/drive-by-path#readme",
   "dependencies": {
-    "drivelist": "github:zkochan/drivelist",
     "is-subdir": "^1.0.1",
     "once": "^1.4.0",
     "ramda": "^0.24.1",
-    "util.promisify": "^1.0.0"
+    "util.promisify": "^1.0.0",
+    "zkochan-drivelist": "^0.0.0"
   },
   "devDependencies": {
     "standard": "^10.0.3",

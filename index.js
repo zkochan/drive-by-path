@@ -1,5 +1,5 @@
 'use strict'
-const _drivelist = require('drivelist')
+const _drivelist = require('zkochan-drivelist')
 const promisify = require('util.promisify')
 const once = require('once')
 const R = require('ramda')
