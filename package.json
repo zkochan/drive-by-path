@@ -1,6 +1,6 @@
 {
   "name": "drive-by-path",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Returns the drive to which a path belongs",
   "main": "index.js",
   "typings": "index.d.ts",
