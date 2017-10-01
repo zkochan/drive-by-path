@@ -39,11 +39,13 @@
     "is-subdir": "^1.0.1",
     "once": "^1.4.0",
     "ramda": "^0.24.1",
-    "util.promisify": "^1.0.0",
-    "zkochan-drivelist": "^0.0.0"
+    "util.promisify": "^1.0.0"
   },
   "devDependencies": {
     "standard": "^10.0.3",
     "tape": "^4.8.0"
+  },
+  "optionalDependencies": {
+    "zkochan-drivelist": "^0.0.0"
   }
 }

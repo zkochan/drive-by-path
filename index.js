@@ -1,11 +1,20 @@
 'use strict'
-const _drivelist = require('zkochan-drivelist')
+let _drivelist
+try {
+  _drivelist = require('zkochan-drivelist')
+} catch (err) {
+  // In case drivelist could not be built
+  _drivelist = null
+}
+
 const promisify = require('util.promisify')
 const once = require('once')
 const R = require('ramda')
 const isSubdir = require('is-subdir')
 
-const drivelist = promisify(_drivelist.list)
+const drivelist = _drivelist
+  ? promisify(_drivelist.list)
+  : () => Promise.reject(new Error('drivelist could not be built on this system'))
 const sortByMountpoint = R.sortBy(R.prop('mountpointPath'))
 const drivesByMountpoints = once(_drivesByMountpoints)
 
