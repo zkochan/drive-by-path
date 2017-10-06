@@ -46,6 +46,6 @@
     "tape": "^4.8.0"
   },
   "optionalDependencies": {
-    "zkochan-drivelist": "^0.0.0"
+    "drivelist": "^5.2.4"
   }
 }

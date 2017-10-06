@@ -1,7 +1,7 @@
 'use strict'
 let _drivelist
 try {
-  _drivelist = require('zkochan-drivelist')
+  _drivelist = require('drivelist')
 } catch (err) {
   // In case drivelist could not be built
   _drivelist = null
